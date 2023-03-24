@@ -56,7 +56,7 @@ export default {
             </div>
             <div id="navLinks">
                 <ul>
-                    <li v-for="link in navLinks"><a href="link.link">{{ link.tag }}</a></li>
+                    <li v-for="link in navLinks"><a href="link.link">{{ link.tag.toUpperCase() }}</a></li>
                 </ul>
             </div>
         </div>
@@ -77,11 +77,10 @@ header .container {
     }
 
     a {
-        text-decoration: none;
+        color: black;
     }
 
     li {
-        list-style-type: none;
         padding: 10px;
     }
 }
