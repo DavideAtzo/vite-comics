@@ -62,4 +62,23 @@ export default {
         </div>
     </header>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+    }
+}
+</style>
