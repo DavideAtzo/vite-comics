@@ -1,14 +1,14 @@
 <script>
-import AppHeaderLogo from "./components/AppHeaderLogo.vue";
+import AppHeader from "./components/AppHeader.vue";
   export default {
     components: {
-      AppHeaderLogo
+      AppHeader
     }
   }
 </script>
 
 <template>
-  <AppHeaderLogo></AppHeaderLogo>
+  <AppHeader></AppHeader>
 </template>
 
 <style lang="scss" scoped>

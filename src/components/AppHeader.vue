@@ -63,20 +63,24 @@ export default {
     </header>
 </template>
 <style lang="scss" scoped>
-header .container{
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 80%;
     margin: 0 auto;
-    ul{
+
+    ul {
         display: flex;
         justify-content: center;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
-    li{
+
+    li {
         list-style-type: none;
         padding: 10px;
     }
