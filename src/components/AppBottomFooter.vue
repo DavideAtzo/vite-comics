@@ -5,25 +5,20 @@ export default {
         return {
             socialLinks: [
                 {
-                    tag: "F",
-                    link: "#"
+                    name: 'src/assets/img/footer-facebook.png'
                 },
                 {
-                    tag: "T",
-                    link: "#"
+                    name: 'src/assets/img/footer-twitter.png'
                 },
                 {
-                    tag: "YT",
-                    link: "#"
+                    name: 'src/assets/img/footer-youtube.png'
                 },
                 {
-                    tag: "P",
-                    link: "#"
+                    name: 'src/assets/img/footer-pinterest.png'
                 },
                 {
-                    tag: "G",
-                    link: "#"
-                },
+                    name: 'src/assets/img/footer-periscope.png'
+                }
             ]
         }
     }
@@ -40,7 +35,11 @@ export default {
                 <div id="socialLinks">
                     <h3>follow us</h3>
                     <ul>
-                        <li v-for="link in socialLinks"><a href="link.link">{{ link.tag }}</a></li>
+                        <li v-for="link in socialLinks">
+                            <a href="#">
+                                <img :src="link.name" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +64,8 @@ export default {
             #socialLinks {
                 display: flex;
             }
-            h3{
+
+            h3 {
                 text-transform: uppercase;
             }
 
@@ -77,6 +77,7 @@ export default {
             li {
                 padding: 0 10px;
             }
+
         }
     }
 }
