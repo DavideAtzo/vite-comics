@@ -5,19 +5,24 @@ export default {
         return {
             socialLinks: [
                 {
-                    name: 'src/assets/img/footer-facebook.png'
+                    img: 'src/assets/img/footer-facebook.png',
+                    name: 'logo-facebook',
                 },
                 {
-                    name: 'src/assets/img/footer-twitter.png'
+                    img: 'src/assets/img/footer-twitter.png',
+                    name: 'logo-twitter',
                 },
                 {
-                    name: 'src/assets/img/footer-youtube.png'
+                    img: 'src/assets/img/footer-youtube.png',
+                    name: 'logo-youtube',
                 },
                 {
-                    name: 'src/assets/img/footer-pinterest.png'
+                    img: 'src/assets/img/footer-pinterest.png',
+                    name: 'logo-pinterest',
                 },
                 {
-                    name: 'src/assets/img/footer-periscope.png'
+                    img: 'src/assets/img/footer-periscope.png',
+                    name: 'logo-periscope',
                 }
             ]
         }
@@ -37,7 +42,7 @@ export default {
                     <ul>
                         <li v-for="link in socialLinks">
                             <a href="#">
-                                <img :src="link.name" alt="">
+                                <img :src="link.img" :alt="link.name">
                             </a>
                         </li>
                     </ul>
