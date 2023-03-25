@@ -63,8 +63,9 @@ export default {
     </header>
 </template>
 <style lang="scss" scoped>
-
-header .container {
+header{
+    padding: 20px;
+    .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,5 +84,6 @@ header .container {
     li {
         padding: 10px;
     }
+}
 }
 </style>
