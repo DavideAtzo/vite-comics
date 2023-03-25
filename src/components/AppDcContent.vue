@@ -70,8 +70,17 @@ export default {
 #cardsDC {
     display: flex;
     flex-wrap: wrap;
-    img{
-        width: 40px;
+    background-color: #1c1c1c;
+    padding: 3.125rem;
+    color: white;
+    div {
+        width: calc(100% / 6);
+        padding: 1.875rem;
+        :deep(img) {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.875rem;
+        }
     }
 }
 </style>
