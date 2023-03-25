@@ -81,6 +81,7 @@ export default {
             h3 {
                 text-transform: uppercase;
                 padding: .3125rem .625rem;
+                color: #0282f9;
             }
 
             ul {
