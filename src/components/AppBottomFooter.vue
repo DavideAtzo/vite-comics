@@ -35,7 +35,7 @@ export default {
         <div class="container">
             <div id="joinDC">
                 <div class="btnSignUp">
-                    <button>sign-up</button>
+                    <button>sign-up now!</button>
                 </div>
                 <div id="socialLinks">
                     <h3>follow us</h3>
@@ -55,23 +55,32 @@ export default {
 
 <style lang="scss">
 #bottomFooter {
-    background-color: grey;
+    background-color: #303030;
+    
 
     .container {
         max-width: 1280px;
         margin: 0 auto;
 
         #joinDC {
+            height: 110px;
             display: flex;
             justify-content: space-between;
-            padding: 1.25rem 0;
+            align-items: center;
 
             #socialLinks {
                 display: flex;
             }
-
+            button{
+                padding: .625rem .9375rem;
+                text-transform: uppercase;
+                background-color: inherit;
+                border: 2px solid #0282f9;
+                color: white;
+            }
             h3 {
                 text-transform: uppercase;
+                padding: .3125rem .625rem;
             }
 
             ul {
@@ -81,6 +90,10 @@ export default {
 
             li {
                 padding: 0 10px;
+            }
+            img{
+                width: 35px;
+                
             }
 
         }
