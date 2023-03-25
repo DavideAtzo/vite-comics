@@ -20,4 +20,10 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+footer{
+    background-image: url('../assets/img/dc-logo-bg.png'), url('../assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>

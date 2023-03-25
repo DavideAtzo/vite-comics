@@ -94,11 +94,17 @@ export default {
         width: 35%;
         display: flex;
         justify-content: flex-start;
+        color: white;
+        padding: 30px 0;
         h3{
             margin: .9375rem 0;
         }
         li{
-            line-height: 1.25rem;
+            line-height: 1.5625rem;
+        }
+        a{
+            color: white;
+            opacity: 0.4;
         }
         #dc{
             padding: 0 1.25rem;
