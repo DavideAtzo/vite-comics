@@ -1,6 +1,7 @@
 @use './partials/reset' as *;
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 li{

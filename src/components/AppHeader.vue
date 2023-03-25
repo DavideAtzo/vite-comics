@@ -51,39 +51,47 @@ export default {
 <template>
     <header>
         <div class="container">
-            <div id="logoHeader">
-                <img src="../assets/img/dc-logo.png" alt="logo-DC">
-            </div>
-            <div id="navLinks">
-                <ul>
-                    <li v-for="link in navLinks"><a href="link.link">{{ link.tag.toUpperCase() }}</a></li>
-                </ul>
-            </div>
+            <nav>
+                <div id="logoHeader">
+                    <img src="../assets/img/dc-logo.png" alt="logo-DC">
+                </div>
+                <div id="navLinks">
+                    <ul>
+                        <li v-for="link in navLinks"><a href="link.link">{{ link.tag.toUpperCase() }}</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 </template>
 <style lang="scss" scoped>
-header{
-    padding: 20px;
+header {
     .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
+        max-width: 1280px;
+        margin: 0 auto;
+        nav {
+            height: 7.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 80px;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
 
-    ul {
-        display: flex;
-        justify-content: center;
-    }
+            }
+            li {
+                line-height: 120px;
+                padding: 0 10px;
+                &:hover {
+                    border-bottom: .3125rem solid #0282f9;
+                    color: #0282f9;
+                }
+            }
+        }
 
-    a {
-        color: black;
-    }
 
-    li {
-        padding: 10px;
     }
-}
-}
-</style>
+}</style>
