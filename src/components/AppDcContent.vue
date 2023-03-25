@@ -62,9 +62,12 @@ export default {
 </script>
 <template>
     <section id="cardsDC">
+        <button id="currentSiries"><a href="#">current siries</a></button>
         <div class="container">
             <AppCardElement v-for="content in content" :url="content.thumb" :title="content.series" />
+            <button id="loadMore"><a href="#">load more</a></button>
         </div>
+
     </section>
 </template>
 
@@ -74,11 +77,26 @@ export default {
     background-color: #1c1c1c;
     padding: 3.125rem;
     color: white;
+    position: relative;
+
+    #currentSiries {
+        padding: .625rem .9375rem;
+        text-transform: uppercase;
+        background-color: #0282f9;
+        border: 1px solid #0282f9;
+        color: white;
+        font-weight: 600;
+        position: absolute;
+        top: -20px;
+        left: 150px;
+        cursor: pointer;
+    }
 
     .container {
         max-width: 1280px;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
 
         div {
@@ -91,6 +109,16 @@ export default {
                 margin-bottom: 1.875rem;
             }
         }
+    }
+
+    #loadMore {
+        padding: .625rem 3.75rem;
+        text-transform: uppercase;
+        background-color: #0282f9;
+        border: 1px solid #0282f9;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
     }
 
 }
