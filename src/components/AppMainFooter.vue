@@ -54,31 +54,55 @@ export default {
 
 <template>
     <div class="container">
-        <div id="dcComics">
-            <h2>{{ dcComicsLinks.linksTitle }}</h2>
-            <ul>
-                <li v-for="link in dcComicsLinks.links"><a href="">{{ link }}</a></li>
-            </ul>
-        </div>
-        <div id="shop">
-            <h2>{{ shopLinks.linksTitle }}</h2>
-            <ul>
-                <li v-for="link in shopLinks.links"><a href="">{{ link }}</a></li>
-            </ul>
-        </div>
-        <div id="dc">
-            <h2>{{ dcLinks.linksTitle }}</h2>
-            <ul>
-                <li v-for="link in dcLinks.links"><a href="">{{ link }}</a></li>
-            </ul>
-        </div>
-        <div id="sities">
-            <h2>{{ sitesLinks.linksTitle }}</h2>
-            <ul>
-                <li v-for="link in sitesLinks.links"><a href="">{{ link }}</a></li>
-            </ul>
+        <div class="mainFooter">
+            <div>
+                <div id="dcComics">
+                <h3>{{ dcComicsLinks.linksTitle.toUpperCase() }}</h3>
+                <ul>
+                    <li v-for="link in dcComicsLinks.links"><a href="">{{ link }}</a></li>
+                </ul>
+            </div>
+            <div id="shop">
+                <h3>{{ shopLinks.linksTitle.toUpperCase() }}</h3>
+                <ul>
+                    <li v-for="link in shopLinks.links"><a href="">{{ link }}</a></li>
+                </ul>
+            </div>
+            </div>
+            <div id="dc">
+                <h3>{{ dcLinks.linksTitle.toUpperCase() }}</h3>
+                <ul>
+                    <li v-for="link in dcLinks.links"><a href="">{{ link }}</a></li>
+                </ul>
+            </div>
+            <div id="sities">
+                <h3>{{ sitesLinks.linksTitle.toUpperCase() }}</h3>
+                <ul>
+                    <li v-for="link in sitesLinks.links"><a href="">{{ link }}</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .mainFooter {
+        width: 35%;
+        display: flex;
+        justify-content: flex-start;
+        h3{
+            margin: .9375rem 0;
+        }
+        li{
+            line-height: 1.25rem;
+        }
+        #dc{
+            padding: 0 1.25rem;
+        }
+    }
+}
+</style>
