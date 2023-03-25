@@ -51,6 +51,7 @@ export default {
 <style lang="scss" scoped>
 #topFooter {
     background-color: #0282f9;
+    padding: 30px;
 
     .container {
         max-width: 1280px;
