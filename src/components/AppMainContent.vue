@@ -1,8 +1,10 @@
 <script>
 import AppJumbo from "./AppJumbo.vue";
+import AppDcContent from "./AppDcContent.vue";
 export default {
     components: {
-        AppJumbo
+        AppJumbo,
+        AppDcContent
     }
   }
 </script>
@@ -10,6 +12,7 @@ export default {
 <template>
     <main>
         <AppJumbo></AppJumbo>
+        <AppDcContent></AppDcContent>
     </main>
 </template>
 

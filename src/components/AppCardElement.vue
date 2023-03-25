@@ -1,16 +1,16 @@
 <script>
-    export default{
+    export default {
         name: 'cards',
         props: {
-            img: String,
-            title: String
+            title: String,
+            url: String,
         }
     }
 </script>
-
 <template>
-    <div class="cards">
-        <div><img :src="img"></div>
-        <h5>{{ title }}</h5>
+    <div class="card">
+        <img :src="url" :alt="title">
+        <h2>{{ title }}</h2>
     </div>
 </template>
+<script lang="scss" scoped></script>
