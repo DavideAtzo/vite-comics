@@ -1,12 +1,12 @@
 <script>
-    import AppCardElement from './AppCardElement.vue';
-    export default {
-        components: {
-            AppCardElement
-        },
-        data(){
-            return {
-                content: [
+import AppCardElement from './AppCardElement.vue';
+export default {
+    components: {
+        AppCardElement
+    },
+    data() {
+        return {
+            content: [
                 {
                     "thumb": "https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640",
                     "series": "DC'S LEGION OF BLOOM",
@@ -31,7 +31,7 @@
                     "thumb": "https://static.dc.com/2023-03/BA_Cv9_00911_DIGITAL.jpg?w=640",
                     "series": "BLACK ADAM",
                 },
-		{
+                {
                     "thumb": "https://static.dc.com/2023-03/SM_LOST_Cv1_00111_DIGITAL.jpg?w=640",
                     "series": "SUPERMAN: LOST",
                 },
@@ -56,16 +56,22 @@
                     "series": "WONDER WOMAN",
                 }
             ]
-            }
         }
     }
+}
 </script>
 <template>
-    <section>
-        <AppCardElement v-for="content in content" :url="content.thumb" :title="content.series"/>
+    <section id="cardsDC">
+        <AppCardElement v-for="content in content" :url="content.thumb" :title="content.series" />
     </section>
 </template>
 
 <style lang="scss" scoped>
-
+#cardsDC {
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: 40px;
+    }
+}
 </style>
