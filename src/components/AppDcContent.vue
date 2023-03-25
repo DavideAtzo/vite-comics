@@ -62,25 +62,36 @@ export default {
 </script>
 <template>
     <section id="cardsDC">
-        <AppCardElement v-for="content in content" :url="content.thumb" :title="content.series" />
+        <div class="container">
+            <AppCardElement v-for="content in content" :url="content.thumb" :title="content.series" />
+        </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
 #cardsDC {
-    display: flex;
-    flex-wrap: wrap;
+
     background-color: #1c1c1c;
     padding: 3.125rem;
     color: white;
-    div {
-        width: calc(100% / 6);
-        padding: 1.875rem;
-        :deep(img) {
-            display: block;
-            width: 100%;
-            margin-bottom: 1.875rem;
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+            width: calc(100% / 6);
+            padding: 1.875rem;
+
+            :deep(img) {
+                display: block;
+                width: 100%;
+                margin-bottom: 1.875rem;
+            }
         }
     }
+
 }
 </style>
